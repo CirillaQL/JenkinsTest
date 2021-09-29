@@ -11,5 +11,10 @@ pipeline {
                 sh 'python main.py'
             }
         }
+        stage('Stage 3'){
+            steps {
+                sh 'python main.py'
+            }
+        }
     }
 }
