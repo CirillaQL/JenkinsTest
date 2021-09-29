@@ -8,11 +8,6 @@ pipeline {
         }
         stage('Stage 2'){
             steps {
-                echo 'This is a pipeline'
-            }
-        }
-        stage('Stage 3'){
-            steps {
                 sh 'python main.py'
             }
         }
