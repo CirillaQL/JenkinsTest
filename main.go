@@ -1,10 +1,14 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"net/http"
 
-func main(){
+	"github.com/gin-gonic/gin"
+)
+
+func main() {
 	router := gin.Default()
-	router.GET("/", func(c *gin.Context){
+	router.GET("/", func(c *gin.Context) {
 		c.String(http.StatusOK, "Hello")
 	})
 	router.Run(":29999")
