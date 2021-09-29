@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Stage 3'){
             steps {
-                echo 'This is a pipeline test'
+                sh 'python main.py'
             }
         }
     }
